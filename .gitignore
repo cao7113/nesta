@@ -13,3 +13,6 @@ pkg/*
 plugins
 public/cache
 spec/tmp
+
+content
+*.log

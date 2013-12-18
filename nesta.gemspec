@@ -31,19 +31,19 @@ EOF
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_dependency('haml', '~> 3.1')
-  s.add_dependency('sass', '~> 3.1')
-  s.add_dependency('rdiscount', '~> 2.1')
-  s.add_dependency('RedCloth', '~> 4.2')
-  s.add_dependency('sinatra', '~> 1.4')
-  s.add_dependency('rack', '~> 1.3')
+  #s.add_dependency('haml')
+  #s.add_dependency('sass')
+  #s.add_dependency('rdiscount', '~> 2.1')
+  #s.add_dependency('RedCloth', '~> 4.2')
+  #s.add_dependency('sinatra')
+  #s.add_dependency('rack')
 
   # Useful in development
-  s.add_development_dependency('mr-sparkle', '>= 0.0.2')
+  #s.add_development_dependency('mr-sparkle', '>= 0.0.2')
 
   # Test libraries
-  s.add_development_dependency('rack-test', '0.6.1')
-  s.add_development_dependency('rspec', '~> 2.12.0')
-  s.add_development_dependency('test-unit', '1.2.3')
-  s.add_development_dependency('webrat', '~> 0.7.3')
+  #s.add_development_dependency('rack-test', '0.6.1')
+  #s.add_development_dependency('rspec', '~> 2.12.0')
+  #s.add_development_dependency('test-unit', '1.2.3')
+  #s.add_development_dependency('webrat', '~> 0.7.3')
 end
