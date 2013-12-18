@@ -1,10 +1,10 @@
 require 'time'
 
-Tilt.register Tilt::MarukuTemplate, 'mdown'
-Tilt.register Tilt::KramdownTemplate, 'mdown'
-Tilt.register Tilt::BlueClothTemplate, 'mdown'
-Tilt.register Tilt::RDiscountTemplate, 'mdown'
-Tilt.register Tilt::RedcarpetTemplate, 'mdown'
+#Tilt.register Tilt::MarukuTemplate, 'md'
+#Tilt.register Tilt::KramdTemplate, 'md'
+#Tilt.register Tilt::BlueClothTemplate, 'md'
+#Tilt.register Tilt::RDiscountTemplate, 'md'
+Tilt.register Tilt::RedcarpetTemplate, 'md'
 
 module Nesta
   class HeadingNotSet < RuntimeError; end
@@ -12,7 +12,7 @@ module Nesta
   class MetadataParseError < RuntimeError; end
 
   class FileModel
-    FORMATS = [:mdown, :haml, :textile]
+    FORMATS = [:md, :haml, :textile]
     @@page_cache = {}
     @@filename_cache = {}
 
@@ -220,7 +220,7 @@ module Nesta
 
     def heading
       regex = case @format
-        when :mdown
+        when :md
           /^#\s*(.*?)(\s*#+|$)/
         when :haml
           /^\s*%h1\s+(.*)/
@@ -271,7 +271,7 @@ module Nesta
 
     def body_markup
       case @format
-        when :mdown
+        when :md
           markup.sub(/^#[^#].*$\r?\n(\r?\n)?/, '')
         when :haml
           markup.sub(/^\s*%h1\s+.*$\r?\n(\r?\n)?/, '')

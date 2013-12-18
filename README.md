@@ -2,7 +2,15 @@
 
 Note: I forked this from [Nesta](https://github.com/gma/nesta) for my need!
 
-========
+## How to use this
+
+* get this repository
+* `bundle install`
+* set a content directory by config/config.yml
+* run: `rackup` or other server
+* visit in browser
+
+========Original
 
 A CMS for small web sites and blogs, written in [Sinatra][frank].
 

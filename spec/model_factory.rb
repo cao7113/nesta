@@ -1,6 +1,6 @@
 module ModelFactory
   def create_page(options)
-    extension = options[:ext] || :mdown
+    extension = options[:ext] || :md
     path = filename(Nesta::Config.page_path, options[:path], extension)
     create_file(path, options)
     yield(path) if block_given?
@@ -60,7 +60,7 @@ module ModelFactory
   end
 
   private
-    def filename(directory, basename, extension = :mdown)
+    def filename(directory, basename, extension = :md)
       File.join(directory, "#{basename}.#{extension}")
     end
 

@@ -541,7 +541,7 @@ describe "Markdown page" do
   include ModelFactory
 
   before(:each) do
-    @extension = :mdown
+    @extension = :md
   end
 
   include_context "Page testing"

@@ -304,8 +304,8 @@
    upgrading. Running `nesta new mysite.com` will create a
    `content/pages/index.haml` file that is suitable for a blog.
 
- * The URL /my-page can be served from `pages/my-page/index.mdown` as
-   well as pages/my-page.mdown (index pages can also be created with
+ * The URL /my-page can be served from `pages/my-page/index.md` as
+   well as pages/my-page.md (index pages can also be created with
    Textile or Haml, just like any other page).
 
  * The description and keywords settings have been removed from

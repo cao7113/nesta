@@ -170,7 +170,7 @@ describe "nesta" do
   describe "edit" do
     before(:each) do
       Nesta::Config.stub(:content_path).and_return('content')
-      @page_path = 'path/to/page.mdown'
+      @page_path = 'path/to/page.md'
       @command = Nesta::Commands::Edit.new(@page_path)
       @command.stub(:system)
     end
