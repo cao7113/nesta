@@ -10,7 +10,9 @@ Note: I forked this from [Nesta](https://github.com/gma/nesta) for my need!
 * run: `rackup` or other server
 * visit in browser
 
-========Original
+================================================
+
+## Original as follow:
 
 A CMS for small web sites and blogs, written in [Sinatra][frank].
 
