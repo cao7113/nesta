@@ -160,7 +160,7 @@ module Nesta
       rescue Errno::ENOENT
         raise Sinatra::NotFound
       else
-        first_paragraph, remaining = contents.split(/\r?\n\r?\n/, 2)
+        first_paragraph, remaining = contents.force_encoding("utf-8").split(/\r?\n\r?\n/, 2)
         begin
           return parse_metadata(first_paragraph), remaining
         rescue MetadataParseError
