@@ -1,6 +1,6 @@
 # Nesta - a CMS for Ruby Developers
 
-Note: I forked this from [Nesta](https://github.com/gma/nesta) for my need!
+Note: forked this from [Nesta](https://github.com/gma/nesta) for my need! Customize a lot!
 
 ## How to use this
 
