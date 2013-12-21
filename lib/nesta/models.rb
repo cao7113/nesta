@@ -3,8 +3,8 @@ require 'time'
 #Tilt.register Tilt::MarukuTemplate, 'md'
 #Tilt.register Tilt::KramdTemplate, 'md'
 #Tilt.register Tilt::BlueClothTemplate, 'md'
-#Tilt.register Tilt::RDiscountTemplate, 'md'
-Tilt.register Tilt::RedcarpetTemplate, 'md'
+Tilt.register Tilt::RDiscountTemplate, 'md'
+#Tilt.register Tilt::RedcarpetTemplate, 'md'
 
 module Nesta
   class HeadingNotSet < RuntimeError; end

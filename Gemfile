@@ -1,15 +1,13 @@
 #source 'http://rubygems.org'
 source "http://ruby.taobao.org"
 
-# Specify your gem's dependencies in nesta.gemspec
 gemspec
-
-#gem 'debugger'
 
 gem 'rack'
 gem 'sinatra'
 gem 'haml'
-gem 'redcarpet'
+#gem 'redcarpet'
+gem 'rdiscount'
 gem 'sass'
 
 group :test do
