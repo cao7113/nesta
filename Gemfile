@@ -16,7 +16,7 @@ end
 
 group :development do
   gem 'pry'
-  gem 'pry-debugger'
+  #gem 'pry-debugger'
 end
 
 gem 'puma'
