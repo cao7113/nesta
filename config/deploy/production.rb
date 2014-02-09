@@ -14,7 +14,7 @@
 # definition into the server list. The second argument
 # something that quacks like a hash can be used to set
 # extended properties on the server.
-server "ip_or_shareup.me", user: 'cao', roles: %w{web app db} #, my_property: :my_value
+server "localhost", user: 'cao', roles: %w{web app db} #, my_property: :my_value
 
 ## Customize
 set :deploy_to, File.expand_path('~/apps/nesta')
