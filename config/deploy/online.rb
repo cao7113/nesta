@@ -21,7 +21,7 @@ set :rails_env, 'production'
 # definition into the server list. The second argument
 # something that quacks like a hash can be used to set
 # extended properties on the server.
-server "ip_or_shareup.me", user: 'cao', roles: %w{web app db} #, my_property: :my_value
+server "shareup.me", user: 'doger', roles: %w{web app db} #, my_property: :my_value
 #set :log_level, :debug
 
 # you can set custom ssh options
