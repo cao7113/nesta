@@ -9,8 +9,10 @@
 #role :db,  %w{cao@example.com}
 
 
-## Customize
-set :deploy_to, File.expand_path('~/apps/nesta')
+#Customize, override config/deploy.rb
+set :repo_url, "https://github.com/cao7113/nesta.git"
+set :deploy_to, File.expand_path('/apps/nesta')
+set :rails_env, 'production'
 
 
 # Extended Server Syntax
@@ -19,8 +21,8 @@ set :deploy_to, File.expand_path('~/apps/nesta')
 # definition into the server list. The second argument
 # something that quacks like a hash can be used to set
 # extended properties on the server.
-server "localhost", user: 'cao', roles: %w{web app db} #, my_property: :my_value
-#set :log_level, :info
+server "ip_or_shareup.me", user: 'cao', roles: %w{web app db} #, my_property: :my_value
+#set :log_level, :debug
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options

@@ -8,6 +8,11 @@
 #role :web, %w{cao@example.com}
 #role :db,  %w{cao@example.com}
 
+
+## Customize
+set :deploy_to, File.expand_path('~/tmp/test/nesta')
+
+
 # Extended Server Syntax
 # ======================
 # This can be used to drop a more detailed server
@@ -15,9 +20,6 @@
 # something that quacks like a hash can be used to set
 # extended properties on the server.
 server "localhost", user: 'cao', roles: %w{web app db} #, my_property: :my_value
-
-## Customize
-set :deploy_to, File.expand_path('~/tmp/test/nesta')
 #set :log_level, :debug
 
 # you can set custom ssh options

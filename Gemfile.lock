@@ -1,22 +1,24 @@
-PATH
-  remote: .
-  specs:
-    nesta (0.9.13)
-
-PATH
-  remote: /home/cao/dev/capistrano-puma
+GIT
+  remote: git://github.com/cao7113/capistrano-puma.git
+  revision: 80909b72da0ab8e4f13af0fbc364e0a46f248343
   specs:
     capistrano3-puma (0.2.2)
       capistrano (~> 3.0)
 
-PATH
-  remote: /home/cao/dev/capup
+GIT
+  remote: git://github.com/cao7113/capup.git
+  revision: eb95e49219214db13b39dac1dbfb9528539e4444
   specs:
     capup (0.0.1)
       capistrano-bundler
       capistrano-rails
       capistrano-rbenv
       thor
+
+PATH
+  remote: .
+  specs:
+    nesta (0.9.13)
 
 GEM
   remote: http://ruby.taobao.org/
