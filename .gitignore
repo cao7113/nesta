@@ -7,7 +7,6 @@
 .rvmrc
 .sass-cache
 #config/config.yml
-config/deploy.rb
 db/*.db
 pkg/*
 plugins
