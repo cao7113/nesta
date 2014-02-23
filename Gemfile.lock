@@ -4,7 +4,7 @@ PATH
     nesta (0.9.13)
 
 GEM
-  remote: http://ruby.taobao.org/
+  remote: http://rubygems.org/
   specs:
     cap-uwsgi (0.0.2)
       capistrano (~> 3.0)
