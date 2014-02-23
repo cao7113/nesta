@@ -10,7 +10,7 @@
 
 
 ## Customize
-set :deploy_to, File.expand_path('~/apps/nesta')
+set :deploy_to, File.expand_path('/apps/nesta')
 
 
 # Extended Server Syntax
