@@ -1,10 +1,5 @@
-PATH
-  remote: .
-  specs:
-    nesta (0.9.13)
-
 GEM
-  remote: http://rubygems.org/
+  remote: http://ruby.taobao.org/
   specs:
     cap-uwsgi (0.0.2)
       capistrano (~> 3.0)
@@ -69,7 +64,6 @@ PLATFORMS
 DEPENDENCIES
   capup
   haml
-  nesta!
   pry
   rack
   rdiscount
