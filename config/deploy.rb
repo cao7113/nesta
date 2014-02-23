@@ -3,6 +3,7 @@ lock '3.1.0'
 
 set :application, 'nesta'
 set :repo_url, File.expand_path("../../.git", __FILE__) #or set :repo_url, "git@shareup:nesta"
+set :content_path, "/data/udoc"
 
 # Default branch is :master
 #set :branch, :master
@@ -47,7 +48,7 @@ task :setup do
     if test "[ -d #{shared_path}/content ]"
       sudo "rm -r #{shared_path}/content"
     end
-    sudo "ln -sb #{File.expand_path('~/data/udoc')} #{shared_path}/content"
+    sudo "ln -sb #{fetch(:content_path)} #{shared_path}/content"
   end
 end
 
